@@ -24,8 +24,16 @@ My Work:
 ## Output
 
 * Descriptive Statiscs:
-![img](https://github.com/nogibjj/IDS706_miniproject2_Mutian/blob/a3655289b8ae6f6e1bb20690b570ae3be4ccb7e8/data.png)
+  
+![img](statiscs.png)
 
 
-* Scatter Plot
-  ![img](https://github.com/nogibjj/IDS706_miniproject2_Mutian/blob/main/scatterfig.png)
+* Buy Vol Plot
+  ![img](buy_vol_plot.png)
+
+* Sell Vol Plot
+  ![img](sell_vol_plot.png)
+  
+* Buy Sell Ratio Plot
+  ![img](buy_sell_ratio_plot.png)
+  
