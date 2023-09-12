@@ -7,6 +7,8 @@ Modify and introduce Polors-based descriptive statistics.
 ## Overview
 We load a csv file from kaggle dataset which is about bitcoin transactions. This project demonstrates some basic statistical info and generates a visualization for data distribution with python libraries like polors,numpy and matplotlib.
 
+Donwload dataset from: https://www.kaggle.com/datasets/jesusgraterol/bitcoin-taker-buysell-volume-binance-futures
+
 My Work:
 1) Add the required package in requirements.txt. <font style="color:#FF00BB"> **polors 0.10.26** && **matplotlib 3.4.3** && **datetime 5.2** </font>
 
