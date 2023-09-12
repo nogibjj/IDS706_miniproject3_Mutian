@@ -1,25 +1,22 @@
-import pandas as pd
+import polars as pl
 import matplotlib.pyplot as plt
 import numpy as np
 def loadDf(path):
-    df = pd.read_csv(path)
-    df.columns = ['Year','Age','Name','Movie','Movie2']
+    df = pl.read_csv(path)
     return df
 
 
 def describeData(df):
     return df.describe()
 
-def plotData(df):
-    
-    plt.figure(figsize=(10,10))
-    x = df['Year']
-    y = df['Age']
-    color= np.array([np.random.randint(0,100) for _ in range(df.shape[0])])
-    plt.scatter(x,y,c=color,cmap='viridis',s=100)
-    plt.xlabel("year")
-    plt.ylabel("age")
-    plt.colorbar()
+## helper function to plot
+def plot(x, y, ylabel, title):
+    x = [i for i in x]
+    y = [i for i in y]
+    fig = plt.figure(figsize=(10, 10))
+    plt.plot(x, y)
+    plt.ylabel(ylabel)
+    plt.xticks( rotation=25 )
+    plt.title(title if title is not None else "")
     plt.show()
-    plt.savefig("./scatterfig.png")
-
+    plt.savefig(f"./{title}_plot.png")
