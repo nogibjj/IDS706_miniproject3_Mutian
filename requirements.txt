@@ -10,8 +10,7 @@ fastapi==0.85.0
 uvicorn==0.18.3
 #data
 polars==0.10.26
-numpy==1.22.4
 #plot
 matplotlib==3.4.3
 
-datetime
+datetime==5.2.0

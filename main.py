@@ -1,6 +1,5 @@
 import polars as pl
 import matplotlib.pyplot as plt
-import numpy as np
 def loadDf(path):
     df = pl.read_csv(path)
     return df
@@ -13,7 +12,7 @@ def describeData(df):
 def plot(x, y, ylabel, title):
     x = [i for i in x]
     y = [i for i in y]
-    fig = plt.figure(figsize=(10, 10))
+    plt.figure(figsize=(10, 10))
     plt.plot(x, y)
     plt.ylabel(ylabel)
     plt.xticks( rotation=25 )
