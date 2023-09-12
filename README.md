@@ -2,13 +2,13 @@
 # Week 2 Mini Project 2 - Pandas Descriptive Statistics Script
 
 ## Goal
-modify and introduce Pandas-based descriptive statistics.
+Modify and introduce Polors-based descriptive statistics.
 
 ## Overview
-This project demonstrates some basic statistical info on the Oscars female dataset with python libraries like pandas,numpy and matplotlib.
+We load a csv file from kaggle dataset which is about bitcoin transactions. This project demonstrates some basic statistical info and generates a visualization for data distribution with python libraries like polors,numpy and matplotlib.
 
 My Work:
-1) Add the required package in requirements.txt. <font style="color:#FF00BB"> **pandas 2.1.0** && **matplotlib 3.4.3** && **numpy 1.22.4** </font>
+1) Add the required package in requirements.txt. <font style="color:#FF00BB"> **polors 0.10.26** && **matplotlib 3.4.3** && **numpy 1.22.4** </font>
 
 2) Add function "loadDf" in main.py which reads a csv file to a dataframe && "describeData" which loads a dataframe and return a statistical info of that data && "plotData" that plots a scatter fig in which describe the age of each year's Oscar female winners.
 
@@ -17,7 +17,7 @@ My Work:
 
 ## Requirements
 * Python (Version 3.6 or newer)
-* Pandas (Version 2.1.0)
+* Polors (Version 0.10.26)
 * Matplotlib (Version 3.4.3)
 * Numpy(Version 1.22.4)
 
