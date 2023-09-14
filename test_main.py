@@ -17,15 +17,3 @@ def test_describedata():
         assert stat in descriptive_df[:,0]
     print(descriptive_df)
 
-def test_plot():
-    df = loadDf("./taker_buy_sell_volume.csv")
-    df['datetime']=df['timestamp'].apply(lambda x:datetime.datetime.fromtimestamp(x//1000))
-
-    plot(x=df["datetime"], y=df["buy_vol"], ylabel="BTC",title="buy_vol")
-
-    plot(x=df["datetime"], y=df["sell_vol"], ylabel="BTC",title="sell_vol")
-
-    plot(x=df["datetime"], y=df["buy_sell_ratio"], ylabel="Ratio",title = "buy_sell_ratio")
-test_loaddata()
-test_describedata()
-test_plot()
