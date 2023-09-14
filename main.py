@@ -22,11 +22,11 @@ def plot(x, y, ylabel, title):
     plt.savefig(f"./{title}_plot.png")
 
 if __name__=='__main__':
-    df = loadDf("./taker_buy_sell_volume.csv")
-    df['datetime']=df['timestamp'].apply(lambda x:datetime.datetime.fromtimestamp(x//1000))
+    ds = loadDf("./taker_buy_sell_volume.csv")
+    ds['datetime']=ds['timestamp'].apply(lambda x:datetime.datetime.fromtimestamp(x//1000))
 
-    plot(x=df["datetime"], y=df["buy_vol"], ylabel="BTC",title="buy_vol")
+    plot(x=ds["datetime"], y=ds["buy_vol"], ylabel="BTC",title="buy_vol")
 
-    plot(x=df["datetime"], y=df["sell_vol"], ylabel="BTC",title="sell_vol")
+    plot(x=ds["datetime"], y=ds["sell_vol"], ylabel="BTC",title="sell_vol")
 
-    plot(x=df["datetime"], y=df["buy_sell_ratio"], ylabel="Ratio",title = "buy_sell_ratio")
+    plot(x=ds["datetime"], y=ds["buy_sell_ratio"], ylabel="Ratio",title = "buy_sell_ratio")
