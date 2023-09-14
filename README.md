@@ -7,6 +7,8 @@ Modify and introduce Polors-based descriptive statistics.
 ## Overview
 We load a csv file from kaggle dataset which is about bitcoin transactions. This project demonstrates some basic statistical info and generates a visualization for data distribution with python libraries like polors,numpy and matplotlib.
 
+Donwload dataset from: https://www.kaggle.com/datasets/jesusgraterol/bitcoin-taker-buysell-volume-binance-futures
+
 My Work:
 1) Add the required package in requirements.txt. <font style="color:#FF00BB"> **polors 0.10.26** && **matplotlib 3.4.3** && **datetime 5.2** </font>
 
@@ -24,8 +26,16 @@ My Work:
 ## Output
 
 * Descriptive Statiscs:
-![img](https://github.com/nogibjj/IDS706_miniproject2_Mutian/blob/a3655289b8ae6f6e1bb20690b570ae3be4ccb7e8/data.png)
+  
+![img](statiscs.png)
 
 
-* Scatter Plot
-  ![img](https://github.com/nogibjj/IDS706_miniproject2_Mutian/blob/main/scatterfig.png)
+* Buy Vol Plot
+  ![img](buy_vol_plot.png)
+
+* Sell Vol Plot
+  ![img](sell_vol_plot.png)
+  
+* Buy Sell Ratio Plot
+  ![img](buy_sell_ratio_plot.png)
+  
